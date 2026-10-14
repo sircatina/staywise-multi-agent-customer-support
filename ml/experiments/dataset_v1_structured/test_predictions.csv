@@ -1,0 +1,21 @@
+customer_message,actual_category,predicted_category,confidence,correct
+Can you tell me the city for reservation RZ-1009?,Reservation,Reservation,0.4083680653854192,True
+Vreau sa anulez rezervarea RZ-1021.,Cancellation,Cancellation,0.5018235071385533,True
+"Am nevoie de ajutor cu RZ-1023, nu sunt sigur care este problema.",Unclear,Unclear,0.518815144389228,True
+Has the payment for RZ-1022 been completed successfully?,Payment,Payment,0.40990409709680836,True
+Cred ca plata pentru RZ-1008 a esuat. Poti verifica?,Payment,Payment,0.5654806070111692,True
+"Am ajuns la RZ-1015, gazda nu raspunde si sunt blocat afara.",Urgent Problem,Urgent Problem,0.527257604170517,True
+La ce proprietate am rezervarea RZ-1018?,Reservation,Reservation,0.4620497716437903,True
+Has the payment for RZ-1002 been completed successfully?,Payment,Payment,0.41109190639612786,True
+I arrived at RZ-1014 but the access code does not work.,Urgent Problem,Urgent Problem,0.4291777372964134,True
+Pot primi rambursare daca renunt la rezervarea RZ-1025?,Cancellation,Cancellation,0.5224380162223713,True
+"Something is wrong with booking RZ-1007, but I cannot explain the issue.",Unclear,Unclear,0.5008007388603707,True
+Can I cancel RZ-1017 and get a refund?,Cancellation,Cancellation,0.4813873682501423,True
+Nu stiu daca problema cu RZ-1005 este legata de plata sau de rezervare.,Unclear,Unclear,0.5814917964992002,True
+There are a few issues with RZ-1004 and I do not know which is the main one.,Unclear,Unclear,0.5174781366678917,True
+I arrived at RZ-1004 but the access code does not work.,Urgent Problem,Urgent Problem,0.43063181312260435,True
+Can you tell me the city for reservation RZ-1004?,Reservation,Reservation,0.4072597793089159,True
+Nu pot intra in cazarea RZ-1016 si am nevoie de ajutor urgent!,Urgent Problem,Urgent Problem,0.5419208425103702,True
+Ce suma primesc inapoi daca anulez RZ-1018?,Cancellation,Cancellation,0.5337579348664988,True
+Care este statusul platii pentru RZ-1021?,Payment,Payment,0.47638041264907727,True
+What is the check-out date for booking RZ-1007?,Reservation,Reservation,0.490015165852905,True

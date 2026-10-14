@@ -1,0 +1,21 @@
+customer_message,actual_category,predicted_category,confidence,correct
+I booked a place near Peleș. Are my arrival and departure dates December 10 and 13?,Reservation,Reservation,0.9464352031676737,True
+Could you explain the refund rules if I pull out of my Oradea trip a few days beforehand?,Cancellation,Cancellation,0.9812119493365565,True
+"I have an issue involving the host and maybe the website too, but I cannot explain it well.",Unclear,Unclear,0.5647673121448776,True
+"Nu cer anularea, doar vreau să știu dacă cei 315 euro sunt deja achitați.",Payment,Cancellation,0.9249889173878043,False
+Pe extras nu-mi dau seama ce s-a întâmplat cu banii după anularea sejurului. Ce status are plata?,Payment,Payment,0.9061840280787126,True
+Am ajuns de Crăciun și cheia primită nu se potrivește. Suntem blocați afară.,Urgent Problem,Urgent Problem,0.998238148980807,True
+La Copou Garden Residence am rezervat trei sau patru nopți? M-am încurcat cu biletele de tren.,Reservation,Reservation,0.8103589448184827,True
+"I need the invoice amount for my Iași stay for an expense report, not the booking dates.",Payment,Payment,0.9063076112590349,True
+La cazare a sărit siguranța și miroase a ars din tabloul electric.,Urgent Problem,Urgent Problem,0.9999985636252346,True
+"Aș vrea să renunț la cazarea rezervată, dar nu mai găsesc codul. Cum aflăm condițiile?",Cancellation,Reservation,0.4767032190781742,False
+There is a message on my screen that I do not understand.,Unclear,Cancellation,0.9276205673165973,False
+"Dacă renunț chiar cu două zile înainte, îmi mai revine ceva din cei 280 €?",Cancellation,Cancellation,0.9468339349117929,True
+"Am nevoie de ajutor, dar nu am la mine niciun detaliu despre ce s-a întâmplat.",Unclear,Urgent Problem,0.6984012535019523,False
+Nu știu dacă ar trebui să modific ceva sau să las totul așa.,Unclear,Unclear,0.9973587296561984,True
+We arrived at the Sinaia property and the door will not open. It is getting dark. Please help now.,Urgent Problem,Reservation,0.9487832538789396,False
+"Hello, I deleted the confirmation email. Is there another way to find my accommodation details?",Reservation,Cancellation,0.8054417675825563,False
+There is a strong smell of smoke in the hallway and the alarm is sounding.,Urgent Problem,Urgent Problem,0.7910821751594117,True
+Nu vreau să repet anularea; mă interesează doar dacă rezervarea din septembrie figurează anulată.,Cancellation,Cancellation,0.5586424099760802,True
+Cardul meu a fost debitat de două ori pentru RZ-1014. Puteți verifica și recupera suma în plus?,Payment,Cancellation,0.8698334612995617,False
+Unde era cazarea pe care am ales-o în Sibiu? Nu-mi mai amintesc numele.,Reservation,Unclear,0.36325706806175817,False

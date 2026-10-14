@@ -1,0 +1,101 @@
+﻿ticket_id,reservation_id,customer_message,category,solution
+TK-0001,,Mă puteți ajuta cu ora de check-in pentru sejurul meu? Nu am numărul rezervării la îndemână.,Reservation,Ask for a booking reference or the email used at reservation; check-in time is not in the dataset.
+TK-0002,RZ-1014,"I know the card was charged twice, but my question is about cancelling the entire stay. What refund rules apply?",Cancellation,Explain cancellation eligibility for RZ-1014 separately from its duplicate-charge issue; do not merge refund types.
+TK-0003,RZ-1023,Am ajuns la locația de pe rezervare și nu găsim pe nimeni; numărul gazdei pare închis.,Urgent Problem,Escalate the arrival problem and verify booking/contact information with human support.
+TK-0004,RZ-1024,Am luat biletele greșite și s-ar putea să nu mai ajung în Iași. Pot opri rezervarea fără penalizare?,Cancellation,Verify request date against December 18; full refund only when >7 full days remain.
+TK-0005,,Este o persoană necunoscută în apartamentul închiriat și nu ne simțim în siguranță.,Urgent Problem,Advise moving to safety and contacting local authorities if threatened; escalate immediately.
+TK-0006,RZ-1016,"Gazda spune că nu găsește rezervarea și refuză să ne lase să intrăm, deși suntem deja aici.",Urgent Problem,Escalate the active check-in dispute and verify RZ-1016 with human support.
+TK-0007,RZ-1014,"I can see a charge on my card, but right now I only need to know whether my Sinaia stay is still booked.",Reservation,Check RZ-1014 and confirm its reservation status; handle any charge concern separately if requested.
+TK-0008,RZ-1020,Can someone look into RZ-1020? Something about it does not seem right.,Unclear,Ask which part of the booking is wrong and what outcome the customer wants.
+TK-0009,RZ-1025,"My booking is already marked cancelled. Can you check whether it was actually closed, not initiate another cancellation?",Cancellation,Verify RZ-1025 is cancelled; invoice is refunded; do not submit a second cancellation.
+TK-0010,RZ-1020,Please verify the property name and city on my December booking; I may have mixed it up with another trip.,Reservation,Confirm RZ-1020 is Union Square Apartment in Timișoara.
+TK-0011,,"Bună, am o problemă cu sejurul și nu știu exact de unde să încep.",Unclear,"Ask what happened and whether the concern is booking, payment, cancellation, or an on-site issue."
+TK-0012,,"Hello, I deleted the confirmation email. Is there another way to find my accommodation details?",Reservation,Request the reservation ID or booking email before looking up the record.
+TK-0013,,"I have an issue involving the host and maybe the website too, but I cannot explain it well.",Unclear,Ask what happened with the host and the website and which issue needs attention first.
+TK-0014,RZ-1014,Cardul meu a fost debitat de două ori pentru RZ-1014. Puteți verifica și recupera suma în plus?,Payment,"INV-1014 records two payments of EUR 460; the extra EUR 460 is eligible for refund, subject to human approval (> EUR 200); no refund is claimed completed."
+TK-0015,RZ-1022,"Nu cer anularea, doar vreau să știu dacă cei 315 euro sunt deja achitați.",Payment,"Check INV-1022: EUR 315, paid."
+TK-0016,,"Pe ce adresă de email pot regăsi rezervarea? Nu am acum codul, dar pot da datele folosite la cumpărare.",Reservation,Ask for the email used to book and search the reservations data; no email is supplied yet.
+TK-0017,RZ-1026,Am nevoie să știu dacă plata pentru Crăciun a trecut sau trebuie să încerc din nou.,Payment,Verify INV-1026 is paid; no retry is indicated by the stored invoice.
+TK-0018,RZ-1007,"Încerc să plătesc RZ-1007, dar tranzacția îmi apare respinsă. S-a înregistrat totuși plata?",Payment,INV-1007 has payment_status failed; explain the payment did not succeed and suggest retrying.
+TK-0019,,Is there a way to give up my reservation and know the penalty first? I cannot access the confirmation email.,Cancellation,Request booking identifier or email and the intended cancellation date.
+TK-0020,RZ-1017,"I need help with the booking and a separate question, but I would rather explain after you reply.",Unclear,Ask the customer to describe the two issues and identify the one to handle first.
+TK-0021,RZ-1014,We arrived at the Sinaia property and the door will not open. It is getting dark. Please help now.,Urgent Problem,Escalate the immediate access issue for RZ-1014 to human support; do not promise entry time.
+TK-0022,RZ-1027,Nu mai putem ajunge de Crăciun la Brașov. Care sunt pașii pentru anulare și ce bani se restituie?,Cancellation,Verify booking details and cancellation timing; use EUR 440 and require approval for any refund > EUR 200.
+TK-0023,RZ-1017,"Dacă anulez cu 5 zile înainte de intrare, primesc jumătate din cei 290 de euro?",Cancellation,"Under policy, five full days qualifies for 50% of EUR 290 = EUR 145, subject to verified request timing."
+TK-0024,RZ-1024,"Am achitat pentru cazarea din Iași, dar nu găsesc factura. Există în evidență?",Payment,"Verify INV-1024, amount EUR 205, with paid status; provide only stored invoice information."
+TK-0025,RZ-1030,"Something changed after I logged in, and now I am unsure whether I should continue.",Unclear,Ask what changed on screen and what the customer was trying to do.
+TK-0026,RZ-1007,"Salut, la RZ-1007 văd confirmarea cazării. Îmi spuneți ce perioadă am selectat?",Reservation,"Verify the confirmed reservation dates, October 18–22, 2026; do not imply its failed invoice was paid."
+TK-0027,,I was charged but never received a receipt. I can share the email I booked with if needed.,Payment,Request the email or reservation ID to locate the invoice and verify the charge.
+TK-0028,RZ-1018,Unde era cazarea pe care am ales-o în Sibiu? Nu-mi mai amintesc numele.,Reservation,Check RZ-1018 and provide the verified property name; no street address is recorded.
+TK-0029,RZ-1029,"Dacă renunț chiar cu două zile înainte, îmi mai revine ceva din cei 280 €?",Cancellation,"Under standard policy, less than three full days before check-in gives EUR 0 refund; do not execute cancellation."
+TK-0030,RZ-1018,Am primit două emailuri diferite și nu-mi dau seama care contează.,Unclear,Ask what each email says and what information the customer wants verified.
+TK-0031,,"A început să curgă apă din tavan peste prize, suntem încă în cameră. Ce facem?",Urgent Problem,Advise moving away from electrical hazards and seeking emergency help if necessary; escalate urgently.
+TK-0032,RZ-1020,At check-in the host stopped answering and we cannot get the keys for RZ-1020.,Urgent Problem,Escalate the time-sensitive arrival/access problem to a human operator.
+TK-0033,RZ-1013,Nu vreau să repet anularea; mă interesează doar dacă rezervarea din septembrie figurează anulată.,Cancellation,Verify RZ-1013 status cancelled; check the refunded invoice only if asked.
+TK-0034,RZ-1030,Could you remind me which apartment I reserved in Iași? I only have the booking reference RZ-1030.,Reservation,Look up RZ-1030 and confirm the property listed as Royal Palace Apartment.
+TK-0035,RZ-1013,Is the payment for my cancelled September stay still listed as paid?,Payment,Verify INV-1013 is marked refunded; do not infer refund processing date.
+TK-0036,RZ-1018,My plans changed. How far ahead do I have to notify you to avoid losing money on RZ-1018?,Cancellation,"Explain >7 days full, 3–7 days half, <3 days none; verify dates before quoting an amount."
+TK-0037,RZ-1020,Mă gândesc să renunț la sejurul RZ-1020. Ce parte din sumă aș putea recupera?,Cancellation,Request the intended cancellation date; apply the 7-day/3-day policy to EUR 275 and seek human approval if refund exceeds EUR 200.
+TK-0038,RZ-1023,Factura pentru sejurul de la mare are suma corectă? Eu am notat 425 €.,Payment,"Check INV-1023: EUR 425, paid."
+TK-0039,,The apartment is flooding and the host is not picking up. Who can intervene right away?,Urgent Problem,Advise moving away from hazards and contacting emergency help if needed; escalate to human support.
+TK-0040,RZ-1022,I booked a place near Peleș. Are my arrival and departure dates December 10 and 13?,Reservation,"Check the stored dates for RZ-1022 and confirm December 10–13, 2026."
+TK-0041,RZ-1022,The front door lock seems broken and I cannot secure the apartment tonight.,Urgent Problem,Escalate the security concern to human support; avoid guaranteeing a repair time.
+TK-0042,RZ-1016,I have two different questions about this booking and am not sure which one matters first.,Unclear,Ask the customer to describe both questions and identify the primary request.
+TK-0043,,Copilul meu s-a blocat în baie și clanța nu se deschide. Avem nevoie de ajutor acum!,Urgent Problem,"Escalate urgently; if immediate danger exists, advise calling local emergency services."
+TK-0044,RZ-1019,My payment history looks different since I cancelled. What is the invoice status now?,Payment,Verify INV-1019 is refunded; any bank-level discrepancy needs further verification.
+TK-0045,RZ-1027,Trebuie să lămuresc ceva cu voi înainte de plecare. Nu știu cum să formulez.,Unclear,Ask what needs clarification about the upcoming stay.
+TK-0046,RZ-1027,Nu putem intra în cazare și afară e foarte frig. Gazda nu răspunde deloc.,Urgent Problem,Escalate the immediate entry issue; request a safe contact method for the guest.
+TK-0047,RZ-1020,Pentru RZ-1020 apare 275 EUR. Asta e valoarea înregistrată la plată?,Payment,Verify invoice INV-1020 shows EUR 275 and paid status.
+TK-0048,RZ-1021,Could you explain the refund rules if I pull out of my Oradea trip a few days beforehand?,Cancellation,Explain the policy bands; exact refund requires the cancellation request date.
+TK-0049,,Salut. E legat de rezervarea făcută acum ceva timp... puteți să mă sunați?,Unclear,Ask for the concrete issue and a booking identifier or email before proceeding.
+TK-0050,RZ-1016,Bună! Plec spre Cluj în noiembrie și nu mai găsesc confirmarea. Îmi puteți verifica perioada sejurului?,Reservation,Verify the booking record and confirm the registered stay dates.
+TK-0051,RZ-1024,We are outside at midnight and the entry instructions sent by the host do not work.,Urgent Problem,Escalate the urgent access issue; request a booking identifier if not already known.
+TK-0052,RZ-1017,There is smoke coming from an electrical socket in the apartment. We have left the room.,Urgent Problem,Advise remaining in a safe place and calling emergency services if appropriate; escalate to human support.
+TK-0053,RZ-1022,I need to cancel RZ-1022. Please tell me whether a full refund is possible before doing anything.,Cancellation,Check request date versus December 10; full refund applies only >7 full days before check-in.
+TK-0054,RZ-1005,Was my May stay at Liberty Square Loft marked as completed? I need to check my travel records.,Reservation,Verify that RZ-1005 has completed status.
+TK-0055,RZ-1024,"Am văzut o schimbare la RZ-1024, doar că nu știu dacă e importantă.",Unclear,Ask what changed and where it was noticed; do not infer payment or reservation status.
+TK-0056,RZ-1027,My bank says the transaction went through. Is that reflected in your records for RZ-1027?,Payment,"Check INV-1027: paid, payment_count 1, amount EUR 440."
+TK-0057,RZ-1009,"I need the invoice amount for my Iași stay for an expense report, not the booking dates.",Payment,"Check INV-1009 and confirm EUR 225, marked paid."
+TK-0058,,"Mi s-a spus că trebuie să verific ceva, însă nu mi s-a explicat ce anume.",Unclear,Ask who requested verification and what information or action was mentioned.
+TK-0059,,"My friend told me to contact support, but I am not sure what information you need.",Unclear,Ask the customer to describe the situation and provide booking details if relevant.
+TK-0060,RZ-1008,I have a card charge from July and want to match it to my accommodation invoice.,Payment,"Use RZ-1008 to verify INV-1008, EUR 545, paid."
+TK-0061,RZ-1025,"După ce s-a închis rezervarea, în sistem scrie că banii au fost returnați?",Payment,Check INV-1025: refunded; do not promise a bank posting date.
+TK-0062,RZ-1030,"Suppose I cancel more than a week before arrival: is the full EUR 335 eligible, or is there a fee?",Cancellation,More than seven full days qualifies for EUR 335; human approval is required because it exceeds EUR 200.
+TK-0063,RZ-1023,Aș dori să anulez șederea la mare. Nu procesați nimic până nu-mi spuneți ce sumă ar fi eligibilă.,Cancellation,Calculate only after obtaining the cancellation date; base is EUR 425 and approval is required if refund > EUR 200.
+TK-0064,RZ-1026,Pe RZ-1026 e ceva ce nu recunosc. Nu știu să vă spun mai mult acum.,Unclear,Ask which field or notification is unfamiliar and request more context.
+TK-0065,,"Aș vrea să renunț la cazarea rezervată, dar nu mai găsesc codul. Cum aflăm condițiile?",Cancellation,"Request reservation ID or booking email, then check the cancellation policy against check-in date."
+TK-0066,RZ-1022,Nu știu dacă ar trebui să modific ceva sau să las totul așa.,Unclear,Ask what prompted the concern and which booking detail is in question.
+TK-0067,RZ-1007,Payment did not work for my Sinaia booking; I actually want to withdraw the reservation. What are the cancellation conditions?,Cancellation,Treat as cancellation; verify booking and failed invoice before discussing any refundable payment.
+TK-0068,,"Am nevoie de ajutor, dar nu am la mine niciun detaliu despre ce s-a întâmplat.",Unclear,Ask for a description of the issue and booking email/reference when available.
+TK-0069,RZ-1011,Why does my old booking show a refund instead of a normal payment?,Payment,"Check INV-1011: status refunded; request transaction details for the reason, which is not recorded."
+TK-0070,,"Nu îmi iese ceva la socoteală, dar poate am înțeles eu greșit.",Unclear,"Ask which charge, booking detail, or condition needs clarification."
+TK-0071,RZ-1002,Câte nopți am stat în Brașov conform rezervării RZ-1002?,Reservation,"Check March 6–9, 2026: three nights; reservation status is completed."
+TK-0072,RZ-1021,Am uitat numele cazării din Oradea; știu doar că am făcut rezervarea cu ceva timp în urmă.,Reservation,"Use RZ-1021 to verify the booked property, Crisul Riverside Loft."
+TK-0073,,"Hi, my booking email is isabella.rossi@example.com. Could you check the check-out date of my stay? I cannot find the reservation number.",Reservation,"Find the booking by exact email; RZ-1030 checks out on December 31, 2026."
+TK-0074,,Miroase puternic a gaz în apartament. Am ieșit afară. Cu cine vorbim urgent?,Urgent Problem,Advise staying outside and contacting local emergency services if danger persists; escalate to human support.
+TK-0075,RZ-1003,"I had a stay in Sibiu in April. If I had cancelled two days before arrival, would the policy have allowed a refund?",Cancellation,Explain that a hypothetical request two days before check-in yields 0% under standard policy; do not alter the completed booking.
+TK-0076,RZ-1016,I paid for my November trip. Can you confirm whether the invoice is marked as paid?,Payment,Verify INV-1016 is paid for EUR 265.
+TK-0077,RZ-1029,Salut! Mai e valabil sejurul de la final de decembrie în Cluj? Am primit mai multe notificări.,Reservation,Check RZ-1029 and report its confirmed status without inventing notification causes.
+TK-0078,,There is a message on my screen that I do not understand.,Unclear,Ask for the exact message or a description of the screen and intended action.
+TK-0079,RZ-1004,Could you check if my Bucharest booking was billed once or more than once?,Payment,Verify INV-1004 shows payment_count 1 and paid status.
+TK-0080,RZ-1026,"Am RZ-1026, dar nu știu dacă am selectat Oradea sau Timișoara.",Reservation,Verify that RZ-1026 is for Old Fortress Studio in Oradea.
+TK-0081,RZ-1018,La cazare a sărit siguranța și miroase a ars din tabloul electric.,Urgent Problem,"Advise avoiding the electrical panel, moving to safety, and contacting emergency services if necessary; escalate."
+TK-0082,,Nu știu dacă problema e la mine sau la platformă. Ce informații vă trebuie?,Unclear,"Ask what the customer attempted, what happened, and any displayed error."
+TK-0083,RZ-1028,Pe extras nu-mi dau seama ce s-a întâmplat cu banii după anularea sejurului. Ce status are plata?,Payment,Check INV-1028; payment_status is refunded. Do not invent settlement timing.
+TK-0084,RZ-1017,"În aplicație îmi apare o rezervare, dar nu știu dacă e încă activă. E vorba de RZ-1017.",Reservation,Confirm that RZ-1017 is recorded as confirmed; do not infer access details.
+TK-0085,RZ-1024,La Copou Garden Residence am rezervat trei sau patru nopți? M-am încurcat cu biletele de tren.,Reservation,"Check RZ-1024: December 18–21, 2026, three nights."
+TK-0086,RZ-1026,Am ajuns de Crăciun și cheia primită nu se potrivește. Suntem blocați afară.,Urgent Problem,Escalate the arrival/access issue for human intervention; do not invent an alternative key.
+TK-0087,,"Bună, am încercat să achit o cazare și pagina s-a blocat înainte să primesc confirmarea.",Payment,Request booking or email details and verify the associated invoice; do not assume success.
+TK-0088,RZ-1027,"Does my Brașov booking cover Christmas Day, or did I select the wrong dates?",Reservation,"Check RZ-1027; the recorded stay runs December 24–28, 2026."
+TK-0089,RZ-1029,There is a strong smell of smoke in the hallway and the alarm is sounding.,Urgent Problem,Advise evacuation and contacting emergency services; escalate the guest-safety issue.
+TK-0090,RZ-1029,I am confused about the last update. Was I supposed to do something?,Unclear,Ask which update the customer received and what action it requested.
+TK-0091,RZ-1030,The apartment door has jammed from the inside and we cannot get out. Please treat this as urgent.,Urgent Problem,Advise contacting emergency services if trapped or unsafe and escalate immediately.
+TK-0092,RZ-1026,Ce se întâmplă cu cei 215 euro dacă solicit anularea cu exact șapte zile înainte?,Cancellation,"Seven full days falls in the 50% band: EUR 107.50, subject to verifying the request date."
+TK-0093,RZ-1023,"My train gets in late. Can you tell me the checkout date for my Constanța stay, not the time?",Reservation,"Verify the check-out date of RZ-1023 as December 18, 2026."
+TK-0094,,"Suntem în fața clădirii și codul de acces nu funcționează. Proprietarul nu răspunde, avem bagajele cu noi.",Urgent Problem,Escalate the access problem immediately to a human operator; request booking/contact details.
+TK-0095,RZ-1016,"If I cancel my Cluj booking, do I get everything back? I have not decided yet.",Cancellation,Ask when cancellation would be requested; calculate eligibility using RZ-1016 dates and EUR 265.
+TK-0096,,"Hi, I think I clicked the wrong thing yesterday. Can this be fixed?",Unclear,Ask what action was taken and what correction is needed.
+TK-0097,RZ-1021,Am intrat în cameră și am găsit geamul spart; nu putem lăsa lucrurile aici.,Urgent Problem,Escalate the security and accommodation-condition issue to a human operator.
+TK-0098,,Mi-a apărut o sumă pe extras cu numele platformei și nu știu de la ce e. Cum o identificăm?,Payment,Ask for the booking email or reference and transaction details before verifying any invoice.
+TK-0099,RZ-1028,Am primit o notificare după anulare. Puteți verifica dacă sejurul este într-adevăr anulat?,Cancellation,Verify RZ-1028 is cancelled and invoice is refunded; no new action is implied.
+TK-0100,,Un calorifer a cedat și apa fierbinte curge pe podea. Ne temem să ne apropiem.,Urgent Problem,Advise avoiding the hazard and seeking immediate local assistance if needed; escalate urgently.

@@ -1,0 +1,187 @@
+You are a synthetic data generator.
+
+I am developing a personal project for a fictional accommodation rental
+platform called "StayWise", similar to Airbnb.
+
+Using the provided StayWise reservations and invoices datasets as reference,
+generate exactly 100 historical customer-support tickets.
+
+These tickets represent examples of customer messages previously received
+by StayWise and how those situations were handled.
+
+The dataset must contain exactly the following columns:
+
+- ticket_id
+- reservation_id
+- customer_message
+- category
+- solution
+
+DATA REQUIREMENTS:
+
+1. ticket_id
+- Must be unique.
+- Use the format TK-0001, TK-0002, ..., TK-0100.
+
+2. reservation_id
+- Use reservation IDs that exist in the provided reservations dataset:
+  RZ-1001 through RZ-1030.
+- Reservation IDs may appear in multiple tickets because the same booking
+  may have generated more than one historical support request.
+- Include exactly one ticket with no reservation ID.
+- For that ticket, leave reservation_id empty and include the customer's
+  email address in customer_message so the reservation could later be
+  identified by email.
+
+3. customer_message
+- Generate realistic messages that a customer of an accommodation rental
+  platform could send to customer support.
+- Messages should vary naturally in wording, length and level of detail.
+- Do not make all messages follow the same sentence structure.
+- Include both Romanian and English messages.
+- Most messages should be in Romanian, but include enough English examples
+  to demonstrate multilingual customer support.
+- Some messages should explicitly mention the reservation ID.
+- Some messages may refer naturally to "my booking" or "my reservation"
+  when the reservation_id column already identifies the associated booking.
+- Messages must be suitable for the assigned category.
+
+4. category
+Use exactly these four categories:
+
+- Reservation
+- Payment
+- Cancellation
+- Urgent Problem
+
+Generate exactly 25 tickets for each category.
+
+Do not create additional categories.
+
+CATEGORY GUIDELINES:
+
+Reservation:
+Questions about an existing booking, such as:
+- check-in or check-out information
+- booking dates
+- accommodation/property information
+- reservation status
+- location or address information
+
+Payment:
+Questions or problems involving:
+- failed payments
+- duplicate charges
+- payment status
+- refunds
+- charges associated with a reservation
+
+Cancellation:
+Requests or questions involving:
+- cancelling a reservation
+- cancellation conditions
+- refund eligibility after cancellation
+- how much money the customer would receive after cancelling
+
+Urgent Problem:
+Situations requiring immediate human attention, such as:
+- guest cannot enter the accommodation
+- host is unreachable at check-in
+- serious issue with the accommodation after arrival
+- safety-related or other time-sensitive problems
+
+5. solution
+- Provide a short, realistic description of how the support request was
+  handled.
+- The solution must be consistent with the category and the available
+  reservation/invoice information.
+- Do not invent reservation, payment or refund information that contradicts
+  the provided datasets.
+- If information cannot be determined from the available data, the solution
+  must state that additional information or human assistance was required.
+- Urgent problems should be escalated to a human operator when appropriate.
+
+IMPORTANT SPECIAL CASES:
+
+FAILED PAYMENT:
+- Include at least one Payment ticket associated with RZ-1007.
+- The message should concern a payment problem.
+- The solution must reflect that the invoice payment_status is "failed".
+- Do not incorrectly tell the customer that the payment succeeded.
+
+DUPLICATE PAYMENT:
+- Include at least one Payment ticket associated with RZ-1014.
+- The message should state that the customer was charged twice.
+- The solution must reflect the duplicate payment represented by
+  payment_count = 2.
+- Do not invent a different transaction amount.
+
+MISSING RESERVATION ID:
+- Include exactly one historical ticket with an empty reservation_id.
+- The customer_message must contain an email address belonging to a customer
+  from the provided reservations dataset.
+- The message must contain enough information so that the reservation can
+  later be searched using the email address.
+- This case will later be used to test whether the triage agent can recover
+  the reservation using the customer's email.
+
+DATA QUALITY REQUIREMENTS:
+
+The dataset will later be used to train a classical machine-learning model
+that predicts the category from customer_message.
+
+Therefore:
+
+- Keep the four categories exactly balanced: 25 examples per category.
+- Use diverse vocabulary within each category.
+- Avoid simply repeating the category name in every message.
+- Do not make classification artificially easy through identical templates.
+- Include short messages and longer messages.
+- Include polite, informal and direct messages.
+- Include some spelling variations and natural customer phrasing, while
+  keeping the messages understandable.
+- Avoid duplicate or near-duplicate customer messages.
+- Ensure that different categories have some vocabulary overlap so that
+  classification requires understanding the context rather than relying
+  on one obvious keyword.
+- Do not include the correct category explicitly inside customer_message.
+
+CONSISTENCY RULES:
+
+- Generate exactly 100 tickets.
+- Generate exactly 25 Reservation tickets.
+- Generate exactly 25 Payment tickets.
+- Generate exactly 25 Cancellation tickets.
+- Generate exactly 25 Urgent Problem tickets.
+- ticket_id must be unique.
+- Use only reservation IDs present in the supplied dataset.
+- Except for the single missing-ID case, every ticket must have a valid
+  reservation_id.
+- Do not modify the reservations or invoices datasets.
+- Do not invent new reservation IDs.
+- Solutions must not contradict reservation or invoice data.
+- RZ-1007 must reflect its failed payment when payment information is relevant.
+- RZ-1014 must reflect its duplicate payment when payment information is relevant.
+
+OUTPUT:
+
+Return the result as CSV.
+
+The first row must contain exactly:
+
+ticket_id,reservation_id,customer_message,category,solution
+
+After the CSV, provide a validation summary containing:
+
+- total number of tickets
+- number of Reservation tickets
+- number of Payment tickets
+- number of Cancellation tickets
+- number of Urgent Problem tickets
+- number of tickets without reservation_id
+- confirmation that all other reservation IDs exist in the reservations dataset
+- confirmation that ticket IDs are unique
+- confirmation that RZ-1007 is represented as a failed-payment case
+- confirmation that RZ-1014 is represented as a duplicate-payment case
+- confirmation that no solution contradicts the provided reservation or
+  invoice datasets

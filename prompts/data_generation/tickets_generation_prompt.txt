@@ -1,0 +1,96 @@
+You are a meticulous synthetic customer-support dataset designer for StayWise, a fictional accommodation rental platform similar to Airbnb.
+
+TASK
+Using the supplied StayWise reservations.csv, invoices.csv, cancellation policy, and payment policy as the source of truth, generate a high-quality dataset of exactly 100 distinct historical customer-support tickets. The dataset will train a classical text classifier (TF-IDF + Logistic Regression) to predict the category of a new customer message. It should reflect varied, realistic customer language rather than formulaic examples.
+
+DELIVERABLE
+Return a UTF-8 CSV with exactly these five columns, in this order:
+ticket_id,reservation_id,customer_message,category,solution
+
+Use unique IDs TK-0001 through TK-0100. Quote and escape CSV fields correctly. Do not add any other columns.
+
+LABELS AND BALANCE
+Use exactly these five labels, with exactly 20 tickets per label:
+- Reservation
+- Payment
+- Cancellation
+- Urgent Problem
+- Unclear
+
+Shuffle categories throughout the CSV. Do not place tickets in category blocks, cycle through a fixed category pattern, or assign each category a predictable ticket-ID range.
+
+CATEGORY DEFINITIONS AND LABELING
+Reservation: The main intent is to obtain or verify booking information, such as confirmation, check-in/check-out, dates, location, property, or booking status.
+Payment: The main intent concerns a transaction, invoice, failed payment, duplicate charge, unexpected debit, or payment-related refund that is NOT primarily a request to cancel.
+Cancellation: The main intent is to cancel a booking, understand cancellation conditions, or determine the refund resulting from cancellation. The presence of words such as 'payment' or 'refund' does not automatically make a message Payment.
+Urgent Problem: The message describes a time-sensitive accommodation or guest-safety problem that requires human assistance, such as being locked out on arrival, inability to reach the host at check-in, or a serious hazard at the property.
+Unclear: The message lacks enough information to identify one main intent reliably, or mentions multiple unrelated problems without indicating which one should be handled first. Do not label a message Unclear merely because its reservation ID is missing; a clear request remains in its actual category.
+
+For messages mentioning multiple topics, label by the customer's primary actionable intent. Include realistic overlap between category vocabularies while keeping the assigned labels defensible. Do not insert explicit category labels into customer messages.
+
+LANGUAGE AND WRITING QUALITY
+- Include substantial numbers of both Romanian and English messages, with Romanian predominant; distribute both languages across all five categories.
+- Vary sentence length, tone, politeness, specificity, grammar, punctuation, and style. Include brief messages, detailed explanations, direct requests, indirect questions, conversational phrasing, and occasional understandable typos or missing diacritics.
+- Do not translate the same template repeatedly between languages.
+- Do not repeat sentence openings, syntax, trigger phrases, or fixed word patterns by category.
+- Avoid duplicate or near-duplicate messages, even when reservation IDs differ.
+- Do not make each category identifiable through a single obvious word; include legitimate vocabulary overlap and indirect expressions.
+- Use natural references such as 'my stay', 'booking', 'card', 'host', 'check-in', or Romanian equivalents where appropriate, without forcing them into every example.
+- Include messages with an explicit reservation ID and messages where the customer does not mention one. Do not impose a fixed number or percentage of missing IDs.
+- Make some messages understandable without an ID and others require lookup or clarification.
+- Keep messages believable as genuine support requests, not descriptions of categories or instructions to a machine-learning model.
+
+RESERVATION ID AND EMAIL CONSISTENCY
+- For populated reservation_id values, use only IDs that exist in the supplied reservations.csv. The same reservation may appear in multiple historical tickets.
+- If the message mentions a reservation ID, it must match the reservation_id column.
+- Include at least one ticket whose reservation_id cell is EMPTY, whose customer_message contains NO reservation ID, and whose customer_message contains a valid customer email copied exactly from reservations.csv. The message must present a clear, actionable booking-related request that the support system could resolve by looking up the email. This is the required missing-reservation-ID special case.
+- You may include additional tickets without an ID, with or without an email, where realistic; do not choose a quota for them.
+- Do not invent email addresses or change customer emails. When using an email address, it must belong to a customer in reservations.csv.
+- An empty reservation_id in a historical ticket does not imply that the underlying reservation is absent from reservations.csv. Do not remove IDs from the reservations or invoices source data.
+
+MANDATORY SPECIAL CASES
+1. FAILED PAYMENT: Include a Payment ticket referring to RZ-1007. Its message must clearly concern a failed payment and its solution must agree with the failed payment status in invoices.csv. Do not state that the payment succeeded.
+2. DUPLICATE PAYMENT: Include a Payment ticket referring to RZ-1014. Its message must clearly describe two charges. The solution must respect payment_count = 2 and the actual invoice amount; do not invent a different charge or claim that a refund was completed.
+3. MISSING RESERVATION ID: Include the email-based ticket described above with a blank reservation_id cell and no ID in the customer_message. The email must be searchable in reservations.csv.
+
+SOLUTION FIELD
+Write a short, realistic, case-specific description of how the request was or should be handled, based on the provided datasets and policies. Vary the wording naturally; do not repeat one identical solution for every ticket in a category.
+- For Reservation, use only verified booking details or explain which lookup is needed.
+- For Payment, reflect the actual invoice/payment status and distinguish checking, requesting approval, and completed transactions.
+- For Cancellation, apply the provided cancellation policy; do not invent refund percentages or amounts, and do not imply that a cancellation has already been executed unless the source data supports it.
+- For Urgent Problem, describe human escalation without inventing guaranteed response times or outcomes.
+- For Unclear, request the specific missing details needed to determine the customer's intent.
+- When the provided data is insufficient, explicitly say that verification or human assistance is required rather than inventing facts.
+- Respect any human-approval threshold specified by the project policies. Never claim an approval or refund has already happened without supporting data.
+
+ANTI-TEMPLATE QUALITY CONTROLS
+Before producing the CSV, privately inspect the entire set and revise any examples that are overly similar. Specifically:
+- Reject rows differing only by reservation ID, city, amount, or a synonym.
+- Reject a recurring category-specific sentence skeleton.
+- Reject a predictable category sequence or contiguous category groups.
+- Reject unnatural messages written only to expose keywords to the classifier.
+- Preserve semantically correct labels despite overlapping vocabulary.
+- Ensure the dataset contains meaningful lexical and syntactic diversity in each category.
+
+VALIDATION BEFORE OUTPUT
+Verify all of the following:
+- Exactly 100 data rows and exactly five specified columns.
+- Exactly 20 examples of each of the five labels.
+- All ticket IDs unique and sequentially numbered TK-0001 through TK-0100.
+- Categories mixed rather than grouped or repeated in a fixed pattern.
+- No duplicate or near-duplicate customer messages.
+- Both Romanian and English present across every category.
+- All nonempty reservation IDs exist in reservations.csv.
+- Any reservation ID stated in a message matches its column value.
+- Any email in a message exists in reservations.csv.
+- The three mandatory special cases are present and internally consistent.
+- Solutions do not contradict reservations, invoices, or policies.
+- The output parses as valid UTF-8 CSV.
+
+OUTPUT FORMAT
+First output only the CSV content, beginning with:
+ticket_id,reservation_id,customer_message,category,solution
+
+After the CSV, provide a concise validation summary outside the CSV indicating category counts, number of empty reservation_id cells (report the observed count, do not target one), the ticket ID of each mandatory special case, and the results of the consistency checks.
+
+Do not claim or target any particular machine-learning accuracy. The dataset's quality must be judged by independent training and evaluation, not by an accuracy guarantee in this prompt.

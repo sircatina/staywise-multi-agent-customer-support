@@ -1,0 +1,109 @@
+You are a synthetic data generator.
+
+I am developing a personal project for a fictional accommodation rental
+platform called "StayWise", similar to Airbnb.
+
+Generate a synthetic dataset containing exactly 30 accommodation reservations
+from Romania.
+
+The dataset must contain the following columns:
+
+- reservation_id
+- guest_name
+- email
+- property_name
+- city
+- check_in
+- check_out
+- total_eur
+- status
+
+DATA REQUIREMENTS:
+
+1. reservation_id
+- Must be unique.
+- Use the format RZ-1001, RZ-1002, ..., RZ-1030.
+
+2. guest_name
+- Generate realistic fictional Romanian and international guest names.
+- Do not use real identifiable persons.
+
+3. email
+- Generate a unique fictional email for every guest.
+- Use only the reserved domain "example.com".
+- Example: ana.popescu@example.com.
+
+4. property_name
+- Generate realistic but fictional accommodation names.
+- Examples of style: "Central Loft", "Old Town Apartment",
+  "Mountain View Chalet".
+- Property names do not need to be unique because different guests may
+  book the same property.
+
+5. city
+- All properties must be located in Romania.
+- Use realistic tourist destinations such as:
+  Cluj-Napoca, Brasov, Sibiu, Bucharest, Timisoara, Oradea,
+  Constanta, Iasi and Sinaia.
+
+6. check_in and check_out
+- Use the ISO date format YYYY-MM-DD.
+- All reservations should take place during 2026.
+- check_out must always be later than check_in.
+- Use realistic stays, generally between 1 and 7 nights.
+
+7. total_eur
+- Use realistic accommodation totals expressed in euros.
+- Use values between 80 and 800 EUR.
+- The value represents the total price of the entire stay, not the
+  price per night.
+- Use two decimal places.
+
+8. status
+Use only:
+- confirmed
+- completed
+- cancelled
+
+The dates and status must be logically consistent.
+
+SPECIAL REQUIREMENTS:
+
+- RZ-1007 must have status "confirmed".
+  This reservation will later be used to simulate a failed payment.
+
+- RZ-1014 must have status "confirmed" and total_eur greater than 200 EUR.
+  This reservation will later be used to simulate a duplicate payment
+  and test the human-approval workflow.
+
+- Include several cancelled reservations because they will later be
+  associated with refunded invoices.
+
+- Include several completed reservations for historical customer-support
+  examples.
+
+CONSISTENCY RULES:
+
+- Generate exactly 30 rows.
+- Do not duplicate reservation IDs.
+- Do not duplicate email addresses.
+- Never generate a check-out date before or equal to the check-in date.
+- Do not add columns that were not requested.
+- Do not generate invoices yet.
+- Do not generate customer-support tickets yet.
+
+OUTPUT:
+
+Return the result as CSV.
+
+The first row must contain exactly:
+
+reservation_id,guest_name,email,property_name,city,check_in,check_out,total_eur,status
+
+After the CSV, provide a short validation summary containing:
+- number of reservations generated
+- number of confirmed reservations
+- number of completed reservations
+- number of cancelled reservations
+- confirmation that RZ-1007 is confirmed
+- confirmation that RZ-1014 is confirmed and has total_eur > 200

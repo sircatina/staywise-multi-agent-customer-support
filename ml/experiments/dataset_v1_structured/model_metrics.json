@@ -1,0 +1,16 @@
+{
+    "dataset_size": 100,
+    "training_samples": 80,
+    "testing_samples": 20,
+    "accuracy": 1.0,
+    "model": "Logistic Regression",
+    "features": "TF-IDF unigram + bigram",
+    "random_state": 42,
+    "classes": [
+        "Cancellation",
+        "Payment",
+        "Reservation",
+        "Unclear",
+        "Urgent Problem"
+    ]
+}

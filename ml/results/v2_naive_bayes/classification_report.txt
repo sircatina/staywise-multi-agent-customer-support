@@ -1,0 +1,11 @@
+                precision    recall  f1-score   support
+
+  Cancellation     0.3333    0.2500    0.2857         4
+       Payment     1.0000    0.2500    0.4000         4
+   Reservation     0.3333    0.5000    0.4000         4
+       Unclear     0.2000    0.2500    0.2222         4
+Urgent Problem     0.8000    1.0000    0.8889         4
+
+      accuracy                         0.4500        20
+     macro avg     0.5333    0.4500    0.4394        20
+  weighted avg     0.5333    0.4500    0.4394        20

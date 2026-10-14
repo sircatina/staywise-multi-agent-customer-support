@@ -1,0 +1,31 @@
+﻿reservation_id,guest_name,email,property_name,city,check_in,check_out,total_eur,status
+RZ-1001,Ana Popescu,ana.popescu@example.com,Central Garden Loft,Cluj-Napoca,2026-02-12,2026-02-15,285.00,completed
+RZ-1002,Andrei Munteanu,andrei.munteanu@example.com,Old Town Residence,Brasov,2026-03-06,2026-03-09,240.00,completed
+RZ-1003,Elena Dumitrescu,elena.dumitrescu@example.com,Piata Mare Studio,Sibiu,2026-04-14,2026-04-17,195.00,completed
+RZ-1004,Thomas Berger,thomas.berger@example.com,Urban View Apartment,Bucharest,2026-05-02,2026-05-06,360.00,completed
+RZ-1005,Ioana Stan,ioana.stan@example.com,Liberty Square Loft,Timisoara,2026-05-21,2026-05-24,210.00,completed
+RZ-1006,David Wilson,david.wilson@example.com,Art Nouveau Residence,Oradea,2026-06-10,2026-06-14,320.00,completed
+RZ-1007,Maria Pavel,maria.pavel@example.com,Mountain View Chalet,Sinaia,2026-10-18,2026-10-22,375.00,confirmed
+RZ-1008,Alexandru Radu,alexandru.radu@example.com,Black Sea Retreat,Constanta,2026-07-05,2026-07-10,545.00,completed
+RZ-1009,Sophie Martin,sophie.martin@example.com,Palace View Studio,Iasi,2026-07-16,2026-07-19,225.00,completed
+RZ-1010,Vlad Ionescu,vlad.ionescu@example.com,Transylvanian Corner,Brasov,2026-08-03,2026-08-07,340.00,completed
+RZ-1011,Laura Matei,laura.matei@example.com,Riverside Apartment,Cluj-Napoca,2026-08-18,2026-08-21,255.00,cancelled
+RZ-1012,Marco Bianchi,marco.bianchi@example.com,Historic Center Suite,Sibiu,2026-09-04,2026-09-08,310.00,completed
+RZ-1013,Irina Petrescu,irina.petrescu@example.com,University Square Flat,Bucharest,2026-09-20,2026-09-23,270.00,cancelled
+RZ-1014,Daniel Pop,daniel.pop@example.com,Carpathian Panorama,Sinaia,2026-10-20,2026-10-25,460.00,confirmed
+RZ-1015,Emma Johnson,emma.johnson@example.com,Seaside Blue Apartment,Constanta,2026-06-22,2026-06-27,590.00,completed
+RZ-1016,Rares Dobre,rares.dobre@example.com,Central Park Studio,Cluj-Napoca,2026-11-05,2026-11-08,265.00,confirmed
+RZ-1017,Cristina Marin,cristina.marin@example.com,Council Square Residence,Brasov,2026-11-12,2026-11-15,290.00,confirmed
+RZ-1018,Lukas Schmidt,lukas.schmidt@example.com,Bruckenthal Boutique Loft,Sibiu,2026-11-19,2026-11-22,245.00,confirmed
+RZ-1019,Adrian Enache,adrian.enache@example.com,Old City Balcony,Bucharest,2026-11-25,2026-11-29,410.00,cancelled
+RZ-1020,Olivia Brown,olivia.brown@example.com,Union Square Apartment,Timisoara,2026-12-02,2026-12-05,275.00,confirmed
+RZ-1021,Mihai Serban,mihai.serban@example.com,Crisul Riverside Loft,Oradea,2026-12-06,2026-12-09,230.00,confirmed
+RZ-1022,Julia Weber,julia.weber@example.com,Peles Garden Studio,Sinaia,2026-12-10,2026-12-13,315.00,confirmed
+RZ-1023,Denisa Tudor,denisa.tudor@example.com,Old Port Apartment,Constanta,2026-12-14,2026-12-18,425.00,confirmed
+RZ-1024,George Nistor,george.nistor@example.com,Copou Garden Residence,Iasi,2026-12-18,2026-12-21,205.00,confirmed
+RZ-1025,Emily Davis,emily.davis@example.com,Central Avenue Loft,Bucharest,2026-12-20,2026-12-24,390.00,cancelled
+RZ-1026,Stefan Ilie,stefan.ilie@example.com,Old Fortress Studio,Oradea,2026-12-22,2026-12-25,215.00,confirmed
+RZ-1027,Natalie Clark,natalie.clark@example.com,Tampa View Apartment,Brasov,2026-12-24,2026-12-28,440.00,confirmed
+RZ-1028,Alina Voicu,alina.voicu@example.com,Little Vienna Residence,Timisoara,2026-12-26,2026-12-29,250.00,cancelled
+RZ-1029,Robert Neagu,robert.neagu@example.com,Somes Riverside Studio,Cluj-Napoca,2026-12-27,2026-12-30,280.00,confirmed
+RZ-1030,Isabella Rossi,isabella.rossi@example.com,Royal Palace Apartment,Iasi,2026-12-28,2026-12-31,335.00,confirmed

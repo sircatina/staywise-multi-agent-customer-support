@@ -1,0 +1,25 @@
+{
+    "dataset": "historical_tickets.csv",
+    "dataset_size": 100,
+    "training_samples": 80,
+    "testing_samples": 20,
+    "accuracy": 0.45,
+    "macro_f1": 0.4393650793650794,
+    "model": "Multinomial Naive Bayes",
+    "features": "TF-IDF unigram + bigram",
+    "alpha": 1.0,
+    "ngram_range": [
+        1,
+        2
+    ],
+    "lowercase": true,
+    "sublinear_tf": true,
+    "random_state": 42,
+    "classes": [
+        "Cancellation",
+        "Payment",
+        "Reservation",
+        "Unclear",
+        "Urgent Problem"
+    ]
+}

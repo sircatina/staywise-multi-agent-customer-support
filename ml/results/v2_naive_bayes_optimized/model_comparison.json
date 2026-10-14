@@ -1,0 +1,51 @@
+{
+    "test_cases": 20,
+    "ml_accuracy": 0.7,
+    "agent_accuracy": 1.0,
+    "ml_total_inference_seconds": 0.017189899925142527,
+    "ml_average_inference_seconds": 0.0008594949962571263,
+    "labels": [
+        "Reservation",
+        "Payment",
+        "Cancellation",
+        "Urgent Problem",
+        "Unclear"
+    ],
+    "confusion_matrix": [
+        [
+            3,
+            0,
+            2,
+            0,
+            0
+        ],
+        [
+            0,
+            4,
+            1,
+            0,
+            0
+        ],
+        [
+            1,
+            0,
+            3,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            2,
+            1
+        ],
+        [
+            1,
+            0,
+            0,
+            0,
+            2
+        ]
+    ]
+}

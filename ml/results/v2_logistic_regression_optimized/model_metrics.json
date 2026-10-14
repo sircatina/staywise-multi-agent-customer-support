@@ -1,0 +1,32 @@
+{
+    "dataset_size": 100,
+    "training_samples": 80,
+    "testing_samples": 20,
+    "accuracy": 0.55,
+    "macro_f1": 0.5367099567099567,
+    "best_cv_macro_f1": 0.6362539682539682,
+    "best_cv_std": 0.07696580374315717,
+    "model": "Logistic Regression",
+    "features": "Optimized TF-IDF",
+    "optimization": "GridSearchCV",
+    "scoring": "f1_macro",
+    "cv_folds": 5,
+    "random_state": 42,
+    "classes": [
+        "Cancellation",
+        "Payment",
+        "Reservation",
+        "Unclear",
+        "Urgent Problem"
+    ],
+    "best_parameters": {
+        "classifier__C": 100,
+        "tfidf__analyzer": "char_wb",
+        "tfidf__min_df": 1,
+        "tfidf__ngram_range": [
+            3,
+            5
+        ],
+        "tfidf__sublinear_tf": true
+    }
+}

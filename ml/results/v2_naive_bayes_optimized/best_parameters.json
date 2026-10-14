@@ -1,0 +1,12 @@
+{
+    "best_cv_macro_f1": 0.623904761904762,
+    "best_parameters": {
+        "classifier__alpha": 0.01,
+        "tfidf__analyzer": "char_wb",
+        "tfidf__ngram_range": [
+            3,
+            6
+        ],
+        "tfidf__sublinear_tf": true
+    }
+}

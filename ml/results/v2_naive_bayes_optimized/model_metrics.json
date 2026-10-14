@@ -1,0 +1,32 @@
+{
+    "dataset": "historical_tickets.csv",
+    "dataset_size": 100,
+    "training_samples": 80,
+    "testing_samples": 20,
+    "accuracy": 0.6,
+    "macro_f1": 0.6067099567099566,
+    "best_cv_macro_f1": 0.623904761904762,
+    "best_cv_std": 0.06136349450650511,
+    "model": "Multinomial Naive Bayes",
+    "features": "Optimized TF-IDF",
+    "optimization": "GridSearchCV",
+    "scoring": "f1_macro",
+    "cv_folds": 5,
+    "random_state": 42,
+    "classes": [
+        "Cancellation",
+        "Payment",
+        "Reservation",
+        "Unclear",
+        "Urgent Problem"
+    ],
+    "best_parameters": {
+        "classifier__alpha": 0.01,
+        "tfidf__analyzer": "char_wb",
+        "tfidf__ngram_range": [
+            3,
+            6
+        ],
+        "tfidf__sublinear_tf": true
+    }
+}

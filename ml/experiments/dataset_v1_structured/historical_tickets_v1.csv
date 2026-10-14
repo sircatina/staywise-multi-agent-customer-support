@@ -1,0 +1,101 @@
+ticket_id,reservation_id,customer_message,category,solution
+TK-0001,RZ-1001,Cand este check-in-ul pentru rezervarea RZ-1001?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0002,RZ-1002,What is the check-out date for booking RZ-1002?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0003,RZ-1003,La ce proprietate am rezervarea RZ-1003?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0004,RZ-1004,Can you tell me the city for reservation RZ-1004?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0005,RZ-1005,Care este statusul rezervarii RZ-1005?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0006,RZ-1006,Cand este check-in-ul pentru rezervarea RZ-1006?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0007,RZ-1007,What is the check-out date for booking RZ-1007?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0008,RZ-1008,La ce proprietate am rezervarea RZ-1008?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0009,RZ-1009,Can you tell me the city for reservation RZ-1009?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0010,RZ-1010,Care este statusul rezervarii RZ-1010?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0011,RZ-1011,Cand este check-in-ul pentru rezervarea RZ-1011?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0012,RZ-1012,What is the check-out date for booking RZ-1012?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0013,RZ-1013,La ce proprietate am rezervarea RZ-1013?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0014,RZ-1014,Can you tell me the city for reservation RZ-1014?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0015,RZ-1015,Care este statusul rezervarii RZ-1015?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0016,RZ-1016,Cand este check-in-ul pentru rezervarea RZ-1016?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0017,RZ-1017,What is the check-out date for booking RZ-1017?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0018,RZ-1018,La ce proprietate am rezervarea RZ-1018?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0019,RZ-1019,Can you tell me the city for reservation RZ-1019?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0020,RZ-1020,Care este statusul rezervarii RZ-1020?,Reservation,Reservation details are checked using the stored reservation data.
+TK-0021,RZ-1021,Care este statusul platii pentru RZ-1021?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0022,RZ-1022,Has the payment for RZ-1022 been completed successfully?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0023,RZ-1023,Cred ca plata pentru RZ-1023 a esuat. Poti verifica?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0024,RZ-1024,Factura pentru RZ-1024 apare ca platita?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0025,RZ-1025,I think I was charged twice for reservation RZ-1025.,Payment,The invoice and payment status are checked using stored billing data.
+TK-0026,RZ-1026,Care este statusul platii pentru RZ-1026?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0027,RZ-1027,Has the payment for RZ-1027 been completed successfully?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0028,RZ-1028,Cred ca plata pentru RZ-1028 a esuat. Poti verifica?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0029,RZ-1029,Factura pentru RZ-1029 apare ca platita?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0030,RZ-1030,I think I was charged twice for reservation RZ-1030.,Payment,The invoice and payment status are checked using stored billing data.
+TK-0031,RZ-1001,Care este statusul platii pentru RZ-1001?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0032,RZ-1002,Has the payment for RZ-1002 been completed successfully?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0033,RZ-1003,Cred ca plata pentru RZ-1003 a esuat. Poti verifica?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0034,RZ-1004,Factura pentru RZ-1004 apare ca platita?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0035,RZ-1005,I think I was charged twice for reservation RZ-1005.,Payment,The invoice and payment status are checked using stored billing data.
+TK-0036,RZ-1006,Care este statusul platii pentru RZ-1006?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0037,RZ-1007,Has the payment for RZ-1007 been completed successfully?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0038,RZ-1008,Cred ca plata pentru RZ-1008 a esuat. Poti verifica?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0039,RZ-1009,Factura pentru RZ-1009 apare ca platita?,Payment,The invoice and payment status are checked using stored billing data.
+TK-0040,RZ-1010,I think I was charged twice for reservation RZ-1010.,Payment,The invoice and payment status are checked using stored billing data.
+TK-0041,RZ-1011,Vreau sa anulez rezervarea RZ-1011.,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0042,RZ-1012,Can I cancel RZ-1012 and get a refund?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0043,RZ-1013,Ce suma primesc inapoi daca anulez RZ-1013?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0044,RZ-1014,What are the cancellation conditions for RZ-1014?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0045,RZ-1015,Pot primi rambursare daca renunt la rezervarea RZ-1015?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0046,RZ-1016,Vreau sa anulez rezervarea RZ-1016.,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0047,RZ-1017,Can I cancel RZ-1017 and get a refund?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0048,RZ-1018,Ce suma primesc inapoi daca anulez RZ-1018?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0049,RZ-1019,What are the cancellation conditions for RZ-1019?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0050,RZ-1020,Pot primi rambursare daca renunt la rezervarea RZ-1020?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0051,RZ-1021,Vreau sa anulez rezervarea RZ-1021.,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0052,RZ-1022,Can I cancel RZ-1022 and get a refund?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0053,RZ-1023,Ce suma primesc inapoi daca anulez RZ-1023?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0054,RZ-1024,What are the cancellation conditions for RZ-1024?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0055,RZ-1025,Pot primi rambursare daca renunt la rezervarea RZ-1025?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0056,RZ-1026,Vreau sa anulez rezervarea RZ-1026.,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0057,RZ-1027,Can I cancel RZ-1027 and get a refund?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0058,RZ-1028,Ce suma primesc inapoi daca anulez RZ-1028?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0059,RZ-1029,What are the cancellation conditions for RZ-1029?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0060,RZ-1030,Pot primi rambursare daca renunt la rezervarea RZ-1030?,Cancellation,Cancellation and refund eligibility are checked according to policy.
+TK-0061,RZ-1001,Nu pot intra in cazarea RZ-1001 si am nevoie de ajutor urgent!,Urgent Problem,The urgent case is escalated to human support.
+TK-0062,RZ-1002,The host for RZ-1002 is unreachable and I cannot check in.,Urgent Problem,The urgent case is escalated to human support.
+TK-0063,RZ-1003,Exista o problema grava de siguranta la cazarea RZ-1003.,Urgent Problem,The urgent case is escalated to human support.
+TK-0064,RZ-1004,I arrived at RZ-1004 but the access code does not work.,Urgent Problem,The urgent case is escalated to human support.
+TK-0065,RZ-1005,"Am ajuns la RZ-1005, gazda nu raspunde si sunt blocat afara.",Urgent Problem,The urgent case is escalated to human support.
+TK-0066,RZ-1006,Nu pot intra in cazarea RZ-1006 si am nevoie de ajutor urgent!,Urgent Problem,The urgent case is escalated to human support.
+TK-0067,RZ-1007,The host for RZ-1007 is unreachable and I cannot check in.,Urgent Problem,The urgent case is escalated to human support.
+TK-0068,RZ-1008,Exista o problema grava de siguranta la cazarea RZ-1008.,Urgent Problem,The urgent case is escalated to human support.
+TK-0069,RZ-1009,I arrived at RZ-1009 but the access code does not work.,Urgent Problem,The urgent case is escalated to human support.
+TK-0070,RZ-1010,"Am ajuns la RZ-1010, gazda nu raspunde si sunt blocat afara.",Urgent Problem,The urgent case is escalated to human support.
+TK-0071,RZ-1011,Nu pot intra in cazarea RZ-1011 si am nevoie de ajutor urgent!,Urgent Problem,The urgent case is escalated to human support.
+TK-0072,RZ-1012,The host for RZ-1012 is unreachable and I cannot check in.,Urgent Problem,The urgent case is escalated to human support.
+TK-0073,RZ-1013,Exista o problema grava de siguranta la cazarea RZ-1013.,Urgent Problem,The urgent case is escalated to human support.
+TK-0074,RZ-1014,I arrived at RZ-1014 but the access code does not work.,Urgent Problem,The urgent case is escalated to human support.
+TK-0075,RZ-1015,"Am ajuns la RZ-1015, gazda nu raspunde si sunt blocat afara.",Urgent Problem,The urgent case is escalated to human support.
+TK-0076,RZ-1016,Nu pot intra in cazarea RZ-1016 si am nevoie de ajutor urgent!,Urgent Problem,The urgent case is escalated to human support.
+TK-0077,RZ-1017,The host for RZ-1017 is unreachable and I cannot check in.,Urgent Problem,The urgent case is escalated to human support.
+TK-0078,RZ-1018,Exista o problema grava de siguranta la cazarea RZ-1018.,Urgent Problem,The urgent case is escalated to human support.
+TK-0079,RZ-1019,I arrived at RZ-1019 but the access code does not work.,Urgent Problem,The urgent case is escalated to human support.
+TK-0080,RZ-1020,"Am ajuns la RZ-1020, gazda nu raspunde si sunt blocat afara.",Urgent Problem,The urgent case is escalated to human support.
+TK-0081,RZ-1021,"Am o problema cu rezervarea RZ-1021, dar nu stiu exact ce s-a intamplat.",Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0082,RZ-1022,"Something is wrong with booking RZ-1022, but I cannot explain the issue.",Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0083,RZ-1023,"Am nevoie de ajutor cu RZ-1023, nu sunt sigur care este problema.",Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0084,RZ-1024,There are a few issues with RZ-1024 and I do not know which is the main one.,Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0085,RZ-1025,Nu stiu daca problema cu RZ-1025 este legata de plata sau de rezervare.,Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0086,RZ-1026,"Am o problema cu rezervarea RZ-1026, dar nu stiu exact ce s-a intamplat.",Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0087,RZ-1027,"Something is wrong with booking RZ-1027, but I cannot explain the issue.",Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0088,RZ-1028,"Am nevoie de ajutor cu RZ-1028, nu sunt sigur care este problema.",Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0089,RZ-1029,There are a few issues with RZ-1029 and I do not know which is the main one.,Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0090,RZ-1030,Nu stiu daca problema cu RZ-1030 este legata de plata sau de rezervare.,Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0091,RZ-1001,"Am o problema cu rezervarea RZ-1001, dar nu stiu exact ce s-a intamplat.",Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0092,RZ-1002,"Something is wrong with booking RZ-1002, but I cannot explain the issue.",Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0093,RZ-1003,"Am nevoie de ajutor cu RZ-1003, nu sunt sigur care este problema.",Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0094,RZ-1004,There are a few issues with RZ-1004 and I do not know which is the main one.,Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0095,RZ-1005,Nu stiu daca problema cu RZ-1005 este legata de plata sau de rezervare.,Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0096,RZ-1006,"Am o problema cu rezervarea RZ-1006, dar nu stiu exact ce s-a intamplat.",Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0097,RZ-1007,"Something is wrong with booking RZ-1007, but I cannot explain the issue.",Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0098,RZ-1008,"Am nevoie de ajutor cu RZ-1008, nu sunt sigur care este problema.",Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0099,RZ-1009,There are a few issues with RZ-1009 and I do not know which is the main one.,Unclear,The customer is asked to provide more details and clarify the main issue.
+TK-0100,RZ-1010,Nu stiu daca problema cu RZ-1010 este legata de plata sau de rezervare.,Unclear,The customer is asked to provide more details and clarify the main issue.

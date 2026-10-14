@@ -1,0 +1,110 @@
+You are a synthetic data generator.
+
+I am developing a personal project for a fictional accommodation rental
+platform called "StayWise", similar to Airbnb.
+
+Using the provided reservations dataset, generate exactly 30 corresponding
+invoices.
+
+Each reservation must have exactly one invoice.
+
+The invoice dataset must contain the following columns:
+
+- invoice_id
+- reservation_id
+- amount_eur
+- payment_status
+- payment_count
+
+DATA REQUIREMENTS:
+
+1. invoice_id
+- Must be unique.
+- Use the format INV-1001, INV-1002, ..., INV-1030.
+- INV-1001 must correspond to RZ-1001, INV-1002 to RZ-1002, etc.
+
+2. reservation_id
+- Must reference an existing reservation from the provided dataset.
+- Every reservation from RZ-1001 to RZ-1030 must appear exactly once.
+
+3. amount_eur
+- Must be copied exactly from the total_eur value of the corresponding
+  reservation.
+- Do not calculate or generate a new amount.
+- Use two decimal places.
+
+4. payment_status
+Use only:
+- paid
+- failed
+- refunded
+
+Apply the following consistency rules:
+
+- If the reservation status is "completed", payment_status must be "paid".
+- If the reservation status is "cancelled", payment_status must be "refunded".
+- Confirmed reservations should normally have payment_status "paid",
+  except for the explicitly defined failed-payment case below.
+
+5. payment_count
+- Normally use 1.
+- Use 2 only for the explicitly defined duplicate-payment case.
+- payment_count represents the number of times the customer was charged.
+
+SPECIAL CASES:
+
+CASE 1 — FAILED PAYMENT
+Reservation RZ-1007 must have:
+- payment_status = failed
+- payment_count = 1
+
+This is intentional even though RZ-1007 has reservation status "confirmed".
+It will later be used to test whether the customer-support agent checks
+payment data instead of making assumptions from the reservation status.
+
+CASE 2 — DUPLICATE PAYMENT
+Reservation RZ-1014 must have:
+- payment_status = paid
+- payment_count = 2
+
+This represents a duplicate charge.
+Do not change the amount_eur field.
+The duplicate payment is represented only through payment_count = 2.
+
+CASE 3 — CANCELLED RESERVATIONS
+Every reservation whose status is "cancelled" must have:
+- payment_status = refunded
+- payment_count = 1
+
+IMPORTANT CONSISTENCY RULES:
+
+- Generate exactly 30 invoices.
+- Every reservation must have exactly one invoice.
+- Do not invent new reservation IDs.
+- amount_eur must exactly match total_eur from the corresponding reservation.
+- Do not modify any data from the reservations dataset.
+- Do not generate customer-support tickets yet.
+- Do not add any additional columns.
+- There must be exactly one failed payment: RZ-1007.
+- There must be exactly one duplicate payment: RZ-1014.
+
+OUTPUT:
+
+Return the result as CSV.
+
+The first row must contain exactly:
+
+invoice_id,reservation_id,amount_eur,payment_status,payment_count
+
+After the CSV, provide a validation summary containing:
+
+- number of invoices generated
+- number of paid invoices
+- number of failed invoices
+- number of refunded invoices
+- number of duplicate payments
+- confirmation that all 30 reservations have exactly one invoice
+- confirmation that every invoice amount matches its reservation total
+- confirmation that RZ-1007 has payment_status = failed
+- confirmation that RZ-1014 has payment_count = 2
+- confirmation that every cancelled reservation has payment_status = refunded

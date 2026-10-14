@@ -1,0 +1,62 @@
+Experiment V1 - Structured Synthetic Dataset
+
+Dataset:
+100 historical customer support tickets
+5 classes
+20 examples per class
+
+Classes:
+- Reservation
+- Payment
+- Cancellation
+- Urgent Problem
+- Unclear
+
+Model:
+TF-IDF + Logistic Regression
+
+Data split:
+80% training
+20% testing
+Random state: 42
+Stratified split
+
+Historical hold-out evaluation:
+Accuracy: 100.00%
+
+Precision: 1.00
+Recall: 1.00
+F1-score: 1.00
+
+The model correctly classified all 20 samples from the historical
+hold-out test set.
+
+Independent evaluation:
+The model was also evaluated on the same 20 new customer messages
+used to evaluate the multi-agent system.
+
+Classic ML accuracy: 85.00%
+Multi-Agent accuracy: 95.00%
+
+Classic ML errors:
+T04: expected Reservation, predicted Payment
+T07: expected Payment, predicted Reservation
+T11: expected Cancellation, predicted Payment
+
+ML inference time for the 20 independent messages:
+0.014598 seconds
+
+Observation:
+The 100% accuracy obtained on the historical hold-out set is likely
+influenced by the highly structured and synthetic nature of the
+dataset. Several messages follow similar linguistic patterns within
+each category, making the random train/test split relatively easy.
+
+The decrease from 100% on the historical hold-out set to 85% on the
+independent test set suggests that the initial evaluation
+overestimates the model's ability to generalize to differently
+phrased customer messages.
+
+Next experiment:
+Create a more linguistically diverse synthetic dataset while
+preserving the same five categories and repeat the evaluation.
